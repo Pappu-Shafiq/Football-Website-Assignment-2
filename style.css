@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+
+/*======================= Google Font =======================*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+/*======================= Common styles =======================*/
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    width: 1050px;
+    background-color: #ffffff;
+}
+span{
+    display: block;
+}
+
+/*======================= Header Nav Menu =======================*/
+
+header{
+    background-color: #2d25a0;
+}
+
+/*======================= Header Main Menu =======================*/
+
+
+.main-menu{
+    display: flex;
+}
+.menu-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 156px;
+    margin-top: 121px;
+    /* margin-right: 80px; */
+    margin-bottom: 27px;
+}
+.button{
+    border: none;
+    color: #ffffff;
+    background-color: #e02c6d;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 156px;
+    margin-bottom: 169px;
+}
+.button:hover{
+    color: #f05e93;
+}
+.button:active{
+    background-color: #f05e93;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.button a i{
+    color: #ffffff;
+    background-color: #e02c6d;
+    font-size: 16px;
+    cursor: pointer;
+}
+.menu-image img{
+    width: 556px;
+    height: 438px;
+    /* margin-left: 100px; */
+    margin-right: 140px;
+    margin-top: 49px;
+    margin-bottom: 86px;
+    transition: width, height;
+    transition-duration: 5s;
+}
+.menu-image img:hover{
+    width: 50px;
+    height: 50px;
+    transform: rotate(-360deg);
+}
+
+
+/*======================= Section-Players =======================*/
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-left: 175px;
+    /* margin-right: 210px; */
+    margin-top: 70px; 
+}
+    .player{
+    border: 1px solid #f8f8f8;
+    width: 320px;
+    height: 500px;
+    /* border-radius: 10px; */
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-image img{
+    width: 300px;
+    height: 256px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    
+}
+.player-title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-title a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.player-info{
+    font-size: 16px;
+    font-weight: normal;
+    color: #6C6C6C;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 33px;
+}
+
+/*======================= Section-Highligts =======================*/
+
+.all-highlights{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    margin-left: 175px;
+    margin-top: 165px;
+    margin-right: 0;
+}
+.highlight h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+    margin-bottom: 8px;
+}
+.highlight p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c6c6c;
+    margin-bottom: 24px;
+}
+/* Button */
+.button2{
+    border: none;
+    color: #ffffff;
+    background-color: #e02c6d;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button2:hover{
+    color: #f05e93;
+}
+.button2:active{
+    background-color: #f05e93;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.button2 a i{
+    color: #ffffff;
+    background-color: #e02c6d;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(23, 120, 242);
+}
+/* Button */
+.highlights-img img{
+    width: 450px;
+    height: 300px;
+    border: 3px dashed #93b940;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width:300%;
+    }
+    to {
+        margin-left: 0%;
+        width:100%;
+    }
+}
+
+/*======================= Footer =======================*/
+
+.footer{
+    margin-top: 158px;
+    margin-bottom: 158px;
+    margin-left: 200px;
+}
+.footer-logo img{
+    width: 483px;
+    height: 110px;
+    display: block;
+    margin-left: 200px;
+}
+.social-icon{
+    display: block;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.social-icon a{
+    text-decoration: none;
+}
+.social-icon a i{
+    width: 32px;
+    height: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 10px;
+    display: inline;
+    margin-top: 10px;
+}
+.fa-facebook-square{
+    background-color: #1778F2;
+}
+.fa-instagram-square{
+    background-color: #e95950;
+}
+.fa-twitter-square{
+    background-color: #1DA1F2;
+}
+.fa-youtube-square{
+    background-color: #FF0000;
+}
+
+.copyright-icon{
+    margin-left: 380px;
+    margin-top: 20px;
+}
+
+/*======================= Media Queries =======================*/
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .players .all-highlights .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players .all-highlights .footer{
+        flex-direction: column;
+    }
+}
+
+
+/*
+{}
+.{}
+#{}
+*/
